@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
+			function acao1(){
+				$('#lista2').append('<div>Novo Item</div>')
+			}
+			function acao2(){
+				$('#lista2').prepend('<div>Novo Item</div>')
+			}
+			function acao3(){
+				$('#lista2').after('<b>Novo Item</b><br>')
+			}
+			function acao4(){
+				$('#lista2').before('<b>Novo Item</b><br>')
+			}
+			function acao5(){
+				$('.item2').remove();
+			}
+		</script>
+	</head>
+
+	<body>
+		<p>DIV:</p>
+		<div id="lista2" style="border: 2px solid;">
+			<div>Item 1</div>
+			<div class="item2">Item 2</div>
+			<div>Item 3</div>
+		</div>
+		<br>
+		<br>
+		<button onclick="acao1()">inserir item dentro da DIV, no final</button>
+		<br>
+		<button onclick="acao2()">inserir item dentro da DIV, no início</button>
+		<br>
+		<button onclick="acao3()">inserir depois da div</button>
+		<br>
+		<button onclick="acao4()">inserir antes da div</button>
+		<br>
+		<button onclick="acao5()">remover item 2 da div</button>
+		<br>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
+			//		Sintaxe de recuperacao de conteudo
+			//
+			//		var variavel = $('id').html()		(retorna o conteudo junto das tags)
+			//		var variavel = $('id').text()		(retorna o conteudo sem das tags)
+			//		var variavel = $('id').html('valor')		(passa um novo conteudo para a tag selecionada)
+
+
+			$(document).ready(function(){
+				
+
+				console.log('conteúdo div 1: ', $('#div1').html())
+				console.log('conteúdo div 1 (Descartando as tags): ', $('#div1').text())
+				console.log('conteúdo div 2: ', $('#div2').html())
+
+			})
+
+
+		</script>
+	</head>
+
+	<body>
+		
+		<div id="div1" style="border:solid 1px #000; width: 150px; height: 150px">
+			<a href="#">teste</a>
+			<p>Esse é outro teste</p>
+			Texto
+			<div>Outro teste</div>
+		</div>
+
+		<div id="div2" style="border:solid 1px #000; width: 150px; height: 150px">
+			Div 2
+		</div>
+		<br>
+		<button onclick="colocar()">Colocar conteudo</button>
+
+	</body>
+	<script>
+		function colocar(){
+			$('#div1').html('<b>Novo valor para a div</b>');
+		}
+	</script>
+</html>
