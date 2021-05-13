@@ -1,3 +1,5 @@
+<img src="gif.gif">
+<hr>
 <h1 align="center"> jquery</h1>
 <h3 align="center">Repositório destinado ao estudo da linguagem de programação interpretada <i> javascript </i> bem como o framework adaptativo da linguagem <i> jquery </i></h3>
 
